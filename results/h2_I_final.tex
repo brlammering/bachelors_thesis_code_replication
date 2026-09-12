@@ -1,0 +1,39 @@
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]},
+hline{2}={1-2}{solid, black, 0.05em},
+hline{23}={1-2}{solid, black, 0.05em},
+hline{1}={1-2}{solid, black, 0.08em},
+hline{28}={1-2}{solid, black, 0.08em},
+column{2}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& (1) \\
+(Intercept) & \num{0.059} \\
+& (\num{0.054}) \\
+occupation\_stdengineer & \num{-0.221} \\
+& (\num{0.038}) \\
+occupation\_stdother & \num{-0.131} \\
+& (\num{0.022}) \\
+contributor.gender & \num{-0.110} \\
+& (\num{0.003}) \\
+contributor.genderF & \num{-0.141} \\
+& (\num{0.001}) \\
+contributor.genderU & \num{0.145} \\
+& (\num{0.112}) \\
+mean\_cfscore\_zipcode\_wo\_i & \num{0.975} \\
+& (\num{0.001}) \\
+SD (Intercept ff49\_abbr) & \num{0.378} \\
+SD (occupation\_stdengineer ff49\_abbr) & \num{0.263} \\
+SD (occupation\_stdother ff49\_abbr) & \num{0.155} \\
+Cor (Intercept\textasciitilde{}occupation\_stdengineer ff49\_abbr) & \num{-0.987} \\
+Cor (Intercept\textasciitilde{}occupation\_stdother ff49\_abbr) & \num{-0.944} \\
+Cor (occupation\_stdengineer\textasciitilde{}occupation\_stdother ff49\_abbr) & \num{0.955} \\
+SD (Observations) & \num{0.633} \\
+Num.Obs. & \num{873663} \\
+R2 Marg. & \num{0.377} \\
+AIC & \num{1681647.4} \\
+BIC & \num{1681811.0} \\
+RMSE & \num{0.63} \\
+\end{tblr}

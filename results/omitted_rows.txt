@@ -1,0 +1,2 @@
+The number of total omitted rows in the common estimation sample of contributors is: 804949 of 1678612 which represents 47.9532494703958% of the observations in the dataset
+The number of total omitted rows in the common estimation sample of contributions is: 2393061 of 4173488 which represents 57.3395922068064% of the observations in the dataset

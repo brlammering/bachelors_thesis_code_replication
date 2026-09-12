@@ -1,0 +1,49 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-6}{solid, black, 0.05em},
+hline{28}={1-6}{solid, black, 0.05em},
+hline{1}={1-6}{solid, black, 0.08em},
+hline{35}={1-6}{solid, black, 0.08em},
+column{2-6}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Baseline & + occupation\_std & * occupation\_std & + gender & + zip-means \\
+(Intercept) & \num{-0.859} & \num{-0.823} & \num{-0.772} & \num{-0.758} & \num{-0.416} \\
+& (\num{0.009}) & (\num{0.009}) & (\num{0.009}) & (\num{0.009}) & (\num{0.008}) \\
+cycle2020 & \num{0.066} & \num{0.063} & \num{0.013} & \num{0.016} & \num{0.078} \\
+& (\num{0.002}) & (\num{0.002}) & (\num{0.004}) & (\num{0.004}) & (\num{0.004}) \\
+cycle2024 & \num{0.001} & \num{-0.002} & \num{-0.078} & \num{-0.075} & \num{-0.070} \\
+& (\num{0.002}) & (\num{0.002}) & (\num{0.004}) & (\num{0.004}) & (\num{0.004}) \\
+occupation\_stdengineer &  & \num{-0.068} & \num{-0.140} & \num{-0.150} & \num{-0.117} \\
+&  & (\num{0.002}) & (\num{0.004}) & (\num{0.004}) & (\num{0.004}) \\
+occupation\_stdother &  & \num{-0.028} & \num{-0.078} & \num{-0.079} & \num{-0.065} \\
+&  & (\num{0.002}) & (\num{0.004}) & (\num{0.004}) & (\num{0.004}) \\
+cycle2020 × occupation\_stdengineer &  &  & \num{0.071} & \num{0.070} & \num{0.048} \\
+&  &  & (\num{0.005}) & (\num{0.005}) & (\num{0.005}) \\
+cycle2024 × occupation\_stdengineer &  &  & \num{0.114} & \num{0.112} & \num{0.087} \\
+&  &  & (\num{0.005}) & (\num{0.005}) & (\num{0.005}) \\
+cycle2020 × occupation\_stdother &  &  & \num{0.050} & \num{0.051} & \num{0.043} \\
+&  &  & (\num{0.005}) & (\num{0.005}) & (\num{0.005}) \\
+cycle2024 × occupation\_stdother &  &  & \num{0.076} & \num{0.077} & \num{0.064} \\
+&  &  & (\num{0.005}) & (\num{0.005}) & (\num{0.005}) \\
+contributor.genderF &  &  &  & \num{-0.043} & \num{-0.038} \\
+&  &  &  & (\num{0.001}) & (\num{0.001}) \\
+contributor.genderU &  &  &  & \num{-0.098} & \num{-0.133} \\
+&  &  &  & (\num{0.081}) & (\num{0.077}) \\
+mean\_dyn\_cfscore\_zipcode\_cycle\_wo\_i &  &  &  &  & \num{0.543} \\
+&  &  &  &  & (\num{0.003}) \\
+SD (Intercept contributor.employer.matched) & \num{0.291} & \num{0.290} & \num{0.289} & \num{0.288} & \num{0.254} \\
+SD (Observations) & \num{0.406} & \num{0.405} & \num{0.405} & \num{0.405} & \num{0.384} \\
+Num.Obs. & \num{406685} & \num{406685} & \num{406685} & \num{406685} & \num{406685} \\
+R2 Marg. & \num{0.004} & \num{0.007} & \num{0.008} & \num{0.009} & \num{0.082} \\
+R2 Cond. & \num{0.342} & \num{0.343} & \num{0.343} & \num{0.343} & \num{0.361} \\
+AIC & \num{424806.7} & \num{423371.8} & \num{422983.3} & \num{422077.7} & \num{380438.8} \\
+BIC & \num{424861.3} & \num{423448.2} & \num{423103.4} & \num{422219.6} & \num{380591.6} \\
+ICC & \num{0.3} & \num{0.3} & \num{0.3} & \num{0.3} & \num{0.3} \\
+RMSE & \num{0.41} & \num{0.40} & \num{0.40} & \num{0.40} & \num{0.38} \\
+\end{tblr}
+\end{table}

@@ -1,0 +1,9 @@
+Data: contributors_ces
+Models:
+h2_I_rs[[1]]: contributor.cfscore ~ occupation_std + contributor.gender + mean_cfscore_zipcode_wo_i + (1 | ff49_abbr)
+h2_I_rs[[2]]: contributor.cfscore ~ occupation_std + contributor.gender + mean_cfscore_zipcode_wo_i + (1 + occupation_std | ff49_abbr)
+             npar     AIC     BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)    
+h2_I_rs[[1]]    9 1683575 1683680 -841778   1683557                         
+h2_I_rs[[2]]   14 1681592 1681756 -840782   1681564 1992.3  5  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

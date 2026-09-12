@@ -1,0 +1,49 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]},
+hline{2}={1-2}{solid, black, 0.05em},
+hline{28}={1-2}{solid, black, 0.05em},
+hline{1}={1-2}{solid, black, 0.08em},
+hline{35}={1-2}{solid, black, 0.08em},
+column{2}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& (1) \\
+(Intercept) & \num{-0.416} \\
+& (\num{0.008}) \\
+cycle2020 & \num{0.078} \\
+& (\num{0.004}) \\
+cycle2024 & \num{-0.070} \\
+& (\num{0.004}) \\
+occupation\_stdengineer & \num{-0.117} \\
+& (\num{0.004}) \\
+occupation\_stdother & \num{-0.065} \\
+& (\num{0.004}) \\
+contributor.genderF & \num{-0.038} \\
+& (\num{0.001}) \\
+contributor.genderU & \num{-0.133} \\
+& (\num{0.077}) \\
+mean\_dyn\_cfscore\_zipcode\_cycle\_wo\_i & \num{0.543} \\
+& (\num{0.003}) \\
+cycle2020 × occupation\_stdengineer & \num{0.048} \\
+& (\num{0.005}) \\
+cycle2024 × occupation\_stdengineer & \num{0.087} \\
+& (\num{0.005}) \\
+cycle2020 × occupation\_stdother & \num{0.043} \\
+& (\num{0.005}) \\
+cycle2024 × occupation\_stdother & \num{0.064} \\
+& (\num{0.005}) \\
+SD (Intercept contributor.employer.matched) & \num{0.254} \\
+SD (Observations) & \num{0.384} \\
+Num.Obs. & \num{406685} \\
+R2 Marg. & \num{0.082} \\
+R2 Cond. & \num{0.361} \\
+AIC & \num{380438.8} \\
+BIC & \num{380591.6} \\
+ICC & \num{0.3} \\
+RMSE & \num{0.38} \\
+\end{tblr}
+\end{table}

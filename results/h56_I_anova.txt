@@ -1,0 +1,13 @@
+Data: contributions_tech_ces
+Models:
+h56_I_fs[[1]]: cfscore_dyn_cycle ~ cycle + (1 | contributor.employer.matched)
+h56_I_fs[[2]]: cfscore_dyn_cycle ~ cycle + occupation_std + (1 | contributor.employer.matched)
+h56_I_fs[[3]]: cfscore_dyn_cycle ~ cycle * occupation_std + (1 | contributor.employer.matched)
+h56_I_fs[[4]]: cfscore_dyn_cycle ~ cycle * occupation_std + contributor.gender + (1 | contributor.employer.matched)
+              npar    AIC    BIC  logLik -2*log(L)   Chisq Df Pr(>Chisq)    
+h56_I_fs[[1]]    5 424777 424832 -212383    424767                          
+h56_I_fs[[2]]    7 423320 423396 -211653    423306 1461.12  2  < 2.2e-16 ***
+h56_I_fs[[3]]   11 422894 423014 -211436    422872  433.74  4  < 2.2e-16 ***
+h56_I_fs[[4]]   13 421974 422116 -210974    421948  924.13  2  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

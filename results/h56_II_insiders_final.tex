@@ -1,0 +1,55 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]},
+hline{2}={1-2}{solid, black, 0.05em},
+hline{34}={1-2}{solid, black, 0.05em},
+hline{1}={1-2}{solid, black, 0.08em},
+hline{41}={1-2}{solid, black, 0.08em},
+column{2}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& (1) \\
+(Intercept) & \num{-0.255} \\
+& (\num{0.004}) \\
+cycle2020 & \num{0.083} \\
+& (\num{0.001}) \\
+cycle2024 & \num{-0.055} \\
+& (\num{0.001}) \\
+ff49\_is\_techTech & \num{-0.149} \\
+& (\num{0.012}) \\
+is\_sec\_insiderTRUE & \num{0.553} \\
+& (\num{0.006}) \\
+contributor.genderF & \num{-0.061} \\
+& (\num{0.001}) \\
+contributor.genderU & \num{0.024} \\
+& (\num{0.062}) \\
+mean\_dyn\_cfscore\_zipcode\_cycle\_wo\_i & \num{0.668} \\
+& (\num{0.001}) \\
+cycle2020 × ff49\_is\_techTech & \num{0.053} \\
+& (\num{0.002}) \\
+cycle2024 × ff49\_is\_techTech & \num{0.051} \\
+& (\num{0.003}) \\
+cycle2020 × is\_sec\_insiderTRUE & \num{-0.107} \\
+& (\num{0.008}) \\
+cycle2024 × is\_sec\_insiderTRUE & \num{-0.121} \\
+& (\num{0.009}) \\
+ff49\_is\_techTech × is\_sec\_insiderTRUE & \num{0.022} \\
+& (\num{0.021}) \\
+cycle2020 × ff49\_is\_techTech × is\_sec\_insiderTRUE & \num{-0.152} \\
+& (\num{0.026}) \\
+cycle2024 × ff49\_is\_techTech × is\_sec\_insiderTRUE & \num{-0.174} \\
+& (\num{0.028}) \\
+SD (Intercept contributor.employer.matched) & \num{0.374} \\
+SD (Observations) & \num{0.467} \\
+Num.Obs. & \num{1780427} \\
+R2 Marg. & \num{0.137} \\
+R2 Cond. & \num{0.474} \\
+AIC & \num{2367313.1} \\
+BIC & \num{2367523.7} \\
+ICC & \num{0.4} \\
+RMSE & \num{0.47} \\
+\end{tblr}
+\end{table}

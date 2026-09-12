@@ -1,0 +1,27 @@
+Data: contributions_ces
+Models:
+h56_II_fs[[1]]: cfscore_dyn_cycle ~ cycle + (1 | contributor.employer.matched)
+h56_II_fs[[2]]: cfscore_dyn_cycle ~ cycle + ff49_is_tech + (1 | contributor.employer.matched)
+h56_II_fs[[3]]: cfscore_dyn_cycle ~ cycle + ff49_is_tech + occupation_std + (1 | contributor.employer.matched)
+h56_II_fs[[4]]: cfscore_dyn_cycle ~ (cycle + ff49_is_tech + occupation_std)^2 + (1 | contributor.employer.matched)
+h56_II_fs[[5]]: cfscore_dyn_cycle ~ cycle * ff49_is_tech * occupation_std + (1 | contributor.employer.matched)
+h56_II_fs[[6]]: cfscore_dyn_cycle ~ cycle * ff49_is_tech * occupation_std + contributor.gender + (1 | contributor.employer.matched)
+h56_II_fs[[7]]: cfscore_dyn_cycle ~ cycle * ff49_is_tech * occupation_std + contributor.gender + mean_dyn_cfscore_zipcode_cycle_wo_i + (1 | contributor.employer.matched)
+               npar     AIC     BIC   logLik -2*log(L)     Chisq Df Pr(>Chisq)
+h56_II_fs[[1]]    5 2675546 2675608 -1337768   2675536                        
+h56_II_fs[[2]]    6 2675413 2675488 -1337701   2675401    134.97  1  < 2.2e-16
+h56_II_fs[[3]]    8 2665965 2666064 -1332974   2665949   9452.54  2  < 2.2e-16
+h56_II_fs[[4]]   16 2658716 2658915 -1329342   2658684   7264.61  8  < 2.2e-16
+h56_II_fs[[5]]   20 2658313 2658561 -1329136   2658273    411.53  4  < 2.2e-16
+h56_II_fs[[6]]   22 2647060 2647333 -1323508   2647016  11256.90  2  < 2.2e-16
+h56_II_fs[[7]]   23 2374299 2374584 -1187126   2374253 272763.19  1  < 2.2e-16
+                  
+h56_II_fs[[1]]    
+h56_II_fs[[2]] ***
+h56_II_fs[[3]] ***
+h56_II_fs[[4]] ***
+h56_II_fs[[5]] ***
+h56_II_fs[[6]] ***
+h56_II_fs[[7]] ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

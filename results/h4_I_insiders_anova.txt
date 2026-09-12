@@ -1,0 +1,18 @@
+Data: contributions_i_ces
+Models:
+h4_I_insiders_fs[[1]]: cfscore_dyn_cycle ~ 1 + (1 | ff49_abbr)
+h4_I_insiders_fs[[2]]: cfscore_dyn_cycle ~ cycle + (1 | ff49_abbr)
+h4_I_insiders_fs[[3]]: cfscore_dyn_cycle ~ cycle + contributor.gender + (1 | ff49_abbr)
+h4_I_insiders_fs[[4]]: cfscore_dyn_cycle ~ cycle + mean_dyn_cfscore_zipcode_cycle_wo_i + contributor.gender + (1 | ff49_abbr)
+                      npar   AIC   BIC logLik -2*log(L)   Chisq Df Pr(>Chisq)
+h4_I_insiders_fs[[1]]    3 54004 54028 -26999     53998                      
+h4_I_insiders_fs[[2]]    5 53469 53509 -26730     53459  538.90  2  < 2.2e-16
+h4_I_insiders_fs[[3]]    6 52808 52856 -26398     52796  663.47  1  < 2.2e-16
+h4_I_insiders_fs[[4]]    7 50685 50741 -25336     50671 2124.60  1  < 2.2e-16
+                         
+h4_I_insiders_fs[[1]]    
+h4_I_insiders_fs[[2]] ***
+h4_I_insiders_fs[[3]] ***
+h4_I_insiders_fs[[4]] ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

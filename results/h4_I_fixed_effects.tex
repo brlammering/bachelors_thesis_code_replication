@@ -1,0 +1,37 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-5}{solid, black, 0.05em},
+hline{16}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.08em},
+hline{23}={1-5}{solid, black, 0.08em},
+column{2-5}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Null-Modell & + cycle & + gender & + zip-means \\
+(Intercept) & \num{-0.532} & \num{-0.330} & \num{-0.281} & \num{0.065} \\
+& (\num{0.053}) & (\num{0.050}) & (\num{0.050}) & (\num{0.045}) \\
+cycle2020 &  & \num{-0.211} & \num{-0.195} & \num{0.010} \\
+&  & (\num{0.003}) & (\num{0.003}) & (\num{0.003}) \\
+cycle2024 &  & \num{-0.331} & \num{-0.311} & \num{-0.185} \\
+&  & (\num{0.003}) & (\num{0.003}) & (\num{0.003}) \\
+contributor.genderF &  &  & \num{-0.159} & \num{-0.126} \\
+&  &  & (\num{0.002}) & (\num{0.002}) \\
+contributor.genderU &  &  & \num{0.279} & \num{0.013} \\
+&  &  & (\num{0.130}) & (\num{0.117}) \\
+mean\_dyn\_cfscore\_zipcode\_cycle\_wo\_i &  &  &  & \num{0.817} \\
+&  &  &  & (\num{0.003}) \\
+SD (Intercept ff49\_abbr) & \num{0.367} & \num{0.351} & \num{0.346} & \num{0.315} \\
+SD (Observations) & \num{0.613} & \num{0.602} & \num{0.597} & \num{0.537} \\
+Num.Obs. & \num{313462} & \num{313462} & \num{313462} & \num{313462} \\
+R2 Marg. & \num{0.000} & \num{0.028} & \num{0.041} & \num{0.203} \\
+R2 Cond. & \num{0.264} & \num{0.275} & \num{0.281} & \num{0.407} \\
+AIC & \num{582721.2} & \num{571756.3} & \num{566549.1} & \num{500268.5} \\
+BIC & \num{582753.1} & \num{571809.6} & \num{566623.7} & \num{500353.8} \\
+ICC & \num{0.3} & \num{0.3} & \num{0.3} & \num{0.3} \\
+RMSE & \num{0.61} & \num{0.60} & \num{0.60} & \num{0.54} \\
+\end{tblr}
+\end{table}

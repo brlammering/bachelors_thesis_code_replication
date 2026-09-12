@@ -1,0 +1,39 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-5}{solid, black, 0.05em},
+hline{18}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.08em},
+hline{25}={1-5}{solid, black, 0.08em},
+column{2-5}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Null-Model & + occupation & + gender & + zip-means \\
+(Intercept) & \num{-0.552} & \num{-0.478} & \num{-0.391} & \num{0.010} \\
+& (\num{0.049}) & (\num{0.049}) & (\num{0.047}) & (\num{0.040}) \\
+occupation\_stdengineer &  & \num{-0.132} & \num{-0.171} & \num{-0.116} \\
+&  & (\num{0.003}) & (\num{0.003}) & (\num{0.003}) \\
+occupation\_stdother &  & \num{-0.083} & \num{-0.079} & \num{-0.070} \\
+&  & (\num{0.002}) & (\num{0.002}) & (\num{0.002}) \\
+contributor.gender &  &  & \num{-0.166} & \num{-0.110} \\
+&  &  & (\num{0.004}) & (\num{0.003}) \\
+contributor.genderF &  &  & \num{-0.205} & \num{-0.142} \\
+&  &  & (\num{0.002}) & (\num{0.001}) \\
+contributor.genderU &  &  & \num{0.135} & \num{0.158} \\
+&  &  & (\num{0.139}) & (\num{0.112}) \\
+mean\_cfscore\_zipcode\_wo\_i &  &  &  & \num{0.976} \\
+&  &  &  & (\num{0.001}) \\
+SD (Intercept ff49\_abbr) & \num{0.341} & \num{0.339} & \num{0.328} & \num{0.277} \\
+SD (Observations) & \num{0.795} & \num{0.794} & \num{0.788} & \num{0.634} \\
+Num.Obs. & \num{873663} & \num{873663} & \num{873663} & \num{873663} \\
+R2 Marg. & \num{0.000} & \num{0.002} & \num{0.015} & \num{0.334} \\
+R2 Cond. & \num{0.155} & \num{0.156} & \num{0.161} & \num{0.441} \\
+AIC & \num{2078682.7} & \num{2076745.3} & \num{2063437.7} & \num{1683635.6} \\
+BIC & \num{2078717.7} & \num{2076803.7} & \num{2063531.1} & \num{1683740.7} \\
+ICC & \num{0.2} & \num{0.2} & \num{0.1} & \num{0.2} \\
+RMSE & \num{0.79} & \num{0.79} & \num{0.79} & \num{0.63} \\
+\end{tblr}
+\end{table}

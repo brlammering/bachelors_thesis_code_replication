@@ -1,0 +1,52 @@
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-8}{solid, black, 0.05em},
+hline{34}={1-8}{solid, black, 0.05em},
+hline{1}={1-8}{solid, black, 0.08em},
+hline{41}={1-8}{solid, black, 0.08em},
+column{2-8}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Baseline & + is\_tech & + is\_sec\_insider & \textasciicircum{}2 & * is\_tech * is\_sec\_insider & + gender & + zip-means \\
+(Intercept) & \num{-0.642} & \num{-0.621} & \num{-0.656} & \num{-0.638} & \num{-0.638} & \num{-0.614} & \num{-0.255} \\
+& (\num{0.005}) & (\num{0.005}) & (\num{0.005}) & (\num{0.005}) & (\num{0.005}) & (\num{0.005}) & (\num{0.004}) \\
+cycle2020 & \num{-0.031} & \num{-0.031} & \num{-0.024} & \num{-0.047} & \num{-0.047} & \num{-0.042} & \num{0.083} \\
+& (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) \\
+cycle2024 & \num{-0.099} & \num{-0.099} & \num{-0.092} & \num{-0.116} & \num{-0.116} & \num{-0.110} & \num{-0.055} \\
+& (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) \\
+ff49\_is\_techTech &  & \num{-0.157} & \num{-0.143} & \num{-0.230} & \num{-0.231} & \num{-0.237} & \num{-0.149} \\
+&  & (\num{0.013}) & (\num{0.013}) & (\num{0.013}) & (\num{0.013}) & (\num{0.013}) & (\num{0.012}) \\
+is\_sec\_insiderTRUE &  &  & \num{0.614} & \num{0.738} & \num{0.730} & \num{0.718} & \num{0.553} \\
+&  &  & (\num{0.004}) & (\num{0.006}) & (\num{0.006}) & (\num{0.006}) & (\num{0.006}) \\
+cycle2020 × ff49\_is\_techTech &  &  &  & \num{0.116} & \num{0.117} & \num{0.117} & \num{0.053} \\
+&  &  &  & (\num{0.003}) & (\num{0.003}) & (\num{0.003}) & (\num{0.002}) \\
+cycle2024 × ff49\_is\_techTech &  &  &  & \num{0.119} & \num{0.120} & \num{0.120} & \num{0.051} \\
+&  &  &  & (\num{0.003}) & (\num{0.003}) & (\num{0.003}) & (\num{0.003}) \\
+cycle2020 × is\_sec\_insiderTRUE &  &  &  & \num{-0.173} & \num{-0.162} & \num{-0.164} & \num{-0.107} \\
+&  &  &  & (\num{0.008}) & (\num{0.008}) & (\num{0.008}) & (\num{0.008}) \\
+cycle2024 × is\_sec\_insiderTRUE &  &  &  & \num{-0.173} & \num{-0.157} & \num{-0.161} & \num{-0.121} \\
+&  &  &  & (\num{0.009}) & (\num{0.010}) & (\num{0.010}) & (\num{0.009}) \\
+ff49\_is\_techTech × is\_sec\_insiderTRUE &  &  &  & \num{-0.136} & \num{-0.031} & \num{-0.029} & \num{0.022} \\
+&  &  &  & (\num{0.012}) & (\num{0.022}) & (\num{0.022}) & (\num{0.021}) \\
+cycle2020 × ff49\_is\_techTech × is\_sec\_insiderTRUE &  &  &  &  & \num{-0.133} & \num{-0.131} & \num{-0.152} \\
+&  &  &  &  & (\num{0.028}) & (\num{0.028}) & (\num{0.026}) \\
+cycle2024 × ff49\_is\_techTech × is\_sec\_insiderTRUE &  &  &  &  & \num{-0.164} & \num{-0.155} & \num{-0.174} \\
+&  &  &  &  & (\num{0.031}) & (\num{0.031}) & (\num{0.028}) \\
+contributor.genderF &  &  &  &  &  & \num{-0.072} & \num{-0.061} \\
+&  &  &  &  &  & (\num{0.001}) & (\num{0.001}) \\
+contributor.genderU &  &  &  &  &  & \num{0.148} & \num{0.024} \\
+&  &  &  &  &  & (\num{0.067}) & (\num{0.062}) \\
+mean\_dyn\_cfscore\_zipcode\_cycle\_wo\_i &  &  &  &  &  &  & \num{0.668} \\
+&  &  &  &  &  &  & (\num{0.001}) \\
+SD (Intercept contributor.employer.matched) & \num{0.445} & \num{0.441} & \num{0.429} & \num{0.428} & \num{0.428} & \num{0.424} & \num{0.374} \\
+SD (Observations) & \num{0.509} & \num{0.509} & \num{0.505} & \num{0.505} & \num{0.505} & \num{0.503} & \num{0.467} \\
+Num.Obs. & \num{1780427} & \num{1780427} & \num{1780427} & \num{1780427} & \num{1780427} & \num{1780427} & \num{1780427} \\
+R2 Marg. & \num{0.003} & \num{0.012} & \num{0.022} & \num{0.023} & \num{0.023} & \num{0.026} & \num{0.137} \\
+R2 Cond. & \num{0.435} & \num{0.436} & \num{0.432} & \num{0.431} & \num{0.431} & \num{0.430} & \num{0.474} \\
+AIC & \num{2675579.5} & \num{2675453.3} & \num{2648068.2} & \num{2644956.9} & \num{2644939.1} & \num{2637019.7} & \num{2367313.1} \\
+BIC & \num{2675641.4} & \num{2675527.6} & \num{2648154.9} & \num{2645105.6} & \num{2645112.5} & \num{2637217.9} & \num{2367523.7} \\
+ICC & \num{0.4} & \num{0.4} & \num{0.4} & \num{0.4} & \num{0.4} & \num{0.4} & \num{0.4} \\
+RMSE & \num{0.51} & \num{0.51} & \num{0.50} & \num{0.50} & \num{0.50} & \num{0.50} & \num{0.47} \\
+\end{tblr}

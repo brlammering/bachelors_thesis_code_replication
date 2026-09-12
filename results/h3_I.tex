@@ -1,0 +1,36 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+hline{2}={1-4}{solid, black, 0.05em},
+hline{14}={1-4}{solid, black, 0.05em},
+hline{1}={1-4}{solid, black, 0.08em},
+hline{22}={1-4}{solid, black, 0.08em},
+column{2-4}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Baseline & + gender & + zip-means \\
+(Intercept) & \num{-0.567} & \num{-0.423} & \num{-0.011} \\
+& (\num{0.002}) & (\num{0.003}) & (\num{0.003}) \\
+ff49\_is\_techTech & \num{-0.248} & \num{-0.249} & \num{-0.109} \\
+& (\num{0.005}) & (\num{0.005}) & (\num{0.004}) \\
+contributor.gender &  & \num{-0.305} & \num{-0.210} \\
+&  & (\num{0.010}) & (\num{0.008}) \\
+contributor.genderF &  & \num{-0.316} & \num{-0.215} \\
+&  & (\num{0.004}) & (\num{0.004}) \\
+contributor.genderU &  & \num{0.189} & \num{0.197} \\
+&  & (\num{0.246}) & (\num{0.202}) \\
+mean\_cfscore\_zipcode\_wo\_i &  &  & \num{0.979} \\
+&  &  & (\num{0.004}) \\
+Num.Obs. & \num{145261} & \num{145261} & \num{145261} \\
+R2 & \num{0.015} & \num{0.050} & \num{0.361} \\
+R2 Adj. & \num{0.015} & \num{0.050} & \num{0.361} \\
+AIC & \num{358335.9} & \num{353071.7} & \num{295617.7} \\
+BIC & \num{358365.6} & \num{353131.0} & \num{295687.0} \\
+Log.Lik. & \num{-179164.960} & \num{-176529.861} & \num{-147801.874} \\
+F & \num{2260.741} & \num{1927.751} & \num{16385.401} \\
+RMSE & \num{0.83} & \num{0.82} & \num{0.67} \\
+\end{tblr}
+\end{table}

@@ -1,0 +1,12 @@
+Data: contributors_ces
+Models:
+h2_I_insiders_rs[[1]]: contributor.cfscore ~ is_sec_insider + contributor.gender + mean_cfscore_zipcode_wo_i + (1 | ff49_abbr)
+h2_I_insiders_rs[[2]]: contributor.cfscore ~ is_sec_insider + contributor.gender + mean_cfscore_zipcode_wo_i + (1 + is_sec_insider | ff49_abbr)
+                      npar     AIC     BIC  logLik -2*log(L)  Chisq Df
+h2_I_insiders_rs[[1]]    8 1680807 1680901 -840396   1680791          
+h2_I_insiders_rs[[2]]   10 1680408 1680524 -840194   1680388 403.64  2
+                      Pr(>Chisq)    
+h2_I_insiders_rs[[1]]               
+h2_I_insiders_rs[[2]]  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

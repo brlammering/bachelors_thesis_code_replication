@@ -1,0 +1,40 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-5}{solid, black, 0.05em},
+hline{18}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.08em},
+hline{26}={1-5}{solid, black, 0.08em},
+column{2-5}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Baseline & + occupation & + gender & + zip-mean \\
+(Intercept) & \num{-0.649} & \num{-0.582} & \num{-0.477} & \num{-0.041} \\
+& (\num{0.001}) & (\num{0.002}) & (\num{0.002}) & (\num{0.002}) \\
+ff49\_is\_techTech & \num{-0.185} & \num{-0.182} & \num{-0.184} & \num{-0.054} \\
+& (\num{0.002}) & (\num{0.002}) & (\num{0.002}) & (\num{0.002}) \\
+occupation\_stdengineer &  & \num{-0.100} & \num{-0.148} & \num{-0.106} \\
+&  & (\num{0.003}) & (\num{0.003}) & (\num{0.003}) \\
+occupation\_stdother &  & \num{-0.078} & \num{-0.073} & \num{-0.069} \\
+&  & (\num{0.002}) & (\num{0.002}) & (\num{0.002}) \\
+contributor.gender &  &  & \num{-0.190} & \num{-0.121} \\
+&  &  & (\num{0.004}) & (\num{0.003}) \\
+contributor.genderF &  &  & \num{-0.234} & \num{-0.155} \\
+&  &  & (\num{0.002}) & (\num{0.001}) \\
+contributor.genderU &  &  & \num{0.158} & \num{0.181} \\
+&  &  & (\num{0.142}) & (\num{0.113}) \\
+mean\_cfscore\_zipcode\_wo\_i &  &  &  & \num{1.002} \\
+&  &  &  & (\num{0.001}) \\
+Num.Obs. & \num{873663} & \num{873663} & \num{873663} & \num{873663} \\
+R2 & \num{0.008} & \num{0.010} & \num{0.029} & \num{0.384} \\
+R2 Adj. & \num{0.008} & \num{0.010} & \num{0.029} & \num{0.384} \\
+AIC & \num{2120266.4} & \num{2118978.9} & \num{2102210.7} & \num{1704252.6} \\
+BIC & \num{2120301.4} & \num{2119037.3} & \num{2102304.1} & \num{1704357.7} \\
+Log.Lik. & \num{-1060130.199} & \num{-1059484.452} & \num{-1051097.351} & \num{-852117.290} \\
+F & \num{7413.445} & \num{2905.613} & \num{4303.653} & \num{77828.048} \\
+RMSE & \num{0.81} & \num{0.81} & \num{0.81} & \num{0.64} \\
+\end{tblr}
+\end{table}

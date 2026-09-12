@@ -1,0 +1,42 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{21}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.08em},
+hline{28}={1-3}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Fixed slope & Random slope \\
+(Intercept) & \num{0.065} & \num{0.098} \\
+& (\num{0.045}) & (\num{0.081}) \\
+cycle2020 & \num{0.010} & \num{-0.092} \\
+& (\num{0.003}) & (\num{0.074}) \\
+cycle2024 & \num{-0.185} & \num{-0.277} \\
+& (\num{0.003}) & (\num{0.075}) \\
+mean\_dyn\_cfscore\_zipcode\_cycle\_wo\_i & \num{0.817} & \num{0.791} \\
+& (\num{0.003}) & (\num{0.003}) \\
+contributor.genderF & \num{-0.126} & \num{-0.125} \\
+& (\num{0.002}) & (\num{0.002}) \\
+contributor.genderU & \num{0.013} & \num{-0.004} \\
+& (\num{0.117}) & (\num{0.116}) \\
+SD (Intercept ff49\_abbr) & \num{0.315} & \num{0.563} \\
+SD (cycle2020 ff49\_abbr) &  & \num{0.518} \\
+SD (cycle2024 ff49\_abbr) &  & \num{0.522} \\
+Cor (Intercept\textasciitilde{}cycle2020 ff49\_abbr) &  & \num{-0.954} \\
+Cor (Intercept\textasciitilde{}cycle2024 ff49\_abbr) &  & \num{-0.962} \\
+Cor (cycle2020\textasciitilde{}cycle2024 ff49\_abbr) &  & \num{0.985} \\
+SD (Observations) & \num{0.537} & \num{0.533} \\
+Num.Obs. & \num{313462} & \num{313462} \\
+R2 Marg. & \num{0.203} & \num{0.218} \\
+R2 Cond. & \num{0.407} & \num{0.406} \\
+AIC & \num{500268.5} & \num{495530.8} \\
+BIC & \num{500353.8} & \num{495669.3} \\
+ICC & \num{0.3} & \num{0.2} \\
+RMSE & \num{0.54} & \num{0.53} \\
+\end{tblr}
+\end{table}

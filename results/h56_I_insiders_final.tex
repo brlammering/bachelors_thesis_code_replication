@@ -1,0 +1,43 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]},
+hline{2}={1-2}{solid, black, 0.05em},
+hline{22}={1-2}{solid, black, 0.05em},
+hline{1}={1-2}{solid, black, 0.08em},
+hline{29}={1-2}{solid, black, 0.08em},
+column{2}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& (1) \\
+(Intercept) & \num{-0.502} \\
+& (\num{0.008}) \\
+cycle2020 & \num{0.121} \\
+& (\num{0.002}) \\
+cycle2024 & \num{-0.005} \\
+& (\num{0.002}) \\
+is\_sec\_insiderTRUE & \num{0.601} \\
+& (\num{0.016}) \\
+contributor.genderF & \num{-0.025} \\
+& (\num{0.001}) \\
+contributor.genderU & \num{-0.140} \\
+& (\num{0.077}) \\
+mean\_dyn\_cfscore\_zipcode\_cycle\_wo\_i & \num{0.542} \\
+& (\num{0.003}) \\
+cycle2020 × is\_sec\_insiderTRUE & \num{-0.266} \\
+& (\num{0.021}) \\
+cycle2024 × is\_sec\_insiderTRUE & \num{-0.302} \\
+& (\num{0.022}) \\
+SD (Intercept contributor.employer.matched) & \num{0.255} \\
+SD (Observations) & \num{0.384} \\
+Num.Obs. & \num{406685} \\
+R2 Marg. & \num{0.083} \\
+R2 Cond. & \num{0.363} \\
+AIC & \num{379878.4} \\
+BIC & \num{379998.5} \\
+ICC & \num{0.3} \\
+RMSE & \num{0.38} \\
+\end{tblr}
+\end{table}

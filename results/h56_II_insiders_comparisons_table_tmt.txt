@@ -1,0 +1,13 @@
+
+ cycle ff49_is_tech Estimate Std. Error    z Pr(>|z|)     S 2.5 % 97.5 %
+  2016     Non-tech    0.553    0.00583 94.8   <0.001   Inf 0.541  0.564
+  2016     Tech        0.575    0.01979 29.0   <0.001 613.6 0.536  0.614
+  2020     Non-tech    0.446    0.00550 81.1   <0.001   Inf 0.435  0.457
+  2020     Tech        0.316    0.01594 19.8   <0.001 288.6 0.285  0.347
+  2024     Non-tech    0.432    0.00696 62.0   <0.001   Inf 0.418  0.445
+  2024     Tech        0.280    0.01864 15.0   <0.001 166.7 0.243  0.316
+
+Term: is_sec_insider
+Type: response
+Comparison: TRUE - FALSE
+
