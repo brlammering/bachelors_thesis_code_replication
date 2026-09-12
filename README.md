@@ -41,6 +41,4 @@ Gender was sadly not computed correctly compute in the original computation of t
 
 ## References to the packages used
 
-```{r, echo=FALSE, results='asis'}
-cat(readLines("citations.md"), sep = "\n")
-```
+I used R v. 4.6.1 (R Core Team 2026a) and the following R packages: archive v. 1.1.13 (Hester and Csárdi 2026), arrow v. 24.0.0 (Richardson et al. 2026), callr v. 3.8.0 (Csárdi and Chang 2026), curl v. 7.1.0 (Ooms 2026), dagitty v. 0.3.4 (Textor et al. 2016), DBI v. 1.3.0 (R Special Interest Group on Databases (R-SIG-DB) et al. 2026), duckdb v. 1.5.2 (Mühleisen and Raasveldt 2026), ggdag v. 0.2.13 (Barrett 2024), glue v. 1.8.1 (Hester and Bryan 2026), here v. 1.0.2 (Müller 2025), httr2 v. 1.2.3 (Wickham 2026), lme4 v. 2.0.1 (Bates et al. 2015), marginaleffects v. 0.32.0 (Arel-Bundock et al. 2024), modelsummary v. 2.6.0 (Arel-Bundock 2022), parallel v. 4.6.1 (R Core Team 2026b), patchwork v. 1.3.2 (Pedersen 2025), renv v. 1.2.3 (Ushey and Wickham 2026), sjPlot v. 2.9.0 (Lüdecke 2025), stargazer v. 5.2.3 (Hlavac 2022), stringdist v. 0.9.17 (van der Loo 2014), tictoc v. 1.2.1 (Izrailev 2024), tidyverse v. 2.0.0 (Wickham et al. 2019), tinytable v. 0.18.0 (Arel-Bundock 2026), tools v. 4.6.1 (R Core Team 2026c), xtable v. 1.8.8 (Dahl et al. 2026).
