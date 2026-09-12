@@ -696,7 +696,7 @@ modelsummary(c("manager" = h2_I_REML, "insiders" = h2_I_insiders_REML),
 # remove objects
 
 rm(
-  p_ocupation_boxplot, p_occupation_means, p_is_sec_insider_means, p_occupation_descr, p_is_sec_insider_descr, p_h2,
+  p_occupation_boxplot, p_occupation_means, p_is_sec_insider_means, p_occupation_descr, p_is_sec_insider_descr, p_h2,
   h2_I_fs, h2_I_rs, h2_I_REML, h2_I_insiders_fs, h2_I_insiders_fs, h2_I_insiders_REML
 )
 gc()
@@ -973,7 +973,7 @@ ggsave("results/insiders_cycle_density.png", p_insiders_cycle_density)
 
 p_h4 <- p_insiders_cycle_density / p_insiders_cycle_means
 
-ggsave("results/p_h4.png", scale = 1.5)
+ggsave("results/p_h4.png", p_h4, scale = 1.5)
 
 
 
