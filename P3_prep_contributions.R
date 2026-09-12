@@ -109,8 +109,8 @@ message("Done")
 
 ## forgotten in the initial computation, added for completeness
 
-contributions <- contributions |> 
-  filter(contributor.gender %in% c("M", "F", "U"))
+# contributions <- contributions |> 
+#   filter(contributor.gender %in% c("M", "F", "U"))
 
 # Dynamic cfscore means --------------------------------------------------
 

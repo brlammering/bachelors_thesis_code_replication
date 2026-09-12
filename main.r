@@ -33,6 +33,18 @@ message("Running A1")
 
 source("A1_reproduce_analysis.R")
 
-# message("Running V1")
+message("Running V1")
 
-# source("V1_validate_matches_manually.R")
+source("V1_validate_matches_manually.R")
+
+###############################################################
+
+# Cite packages used
+
+lock <- renv::lockfile_read("renv.lock")
+pkgs <- c("base", names(lock$Packages))
+grateful::cite_packages(pkgs = pkgs, out.dir = ".", output = "table", out.format = "md")
+
+# Session info
+
+utils::sessionInfo()

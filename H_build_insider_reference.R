@@ -1,4 +1,4 @@
-# A3_build_insider_reference.R -------------------------------------------------
+# H_build_insider_reference.R -------------------------------------------------
 #
 # Builds a person-level reference table of SEC Section 16 insiders (officers and
 # directors) from the SEC "Insider Transactions Data Sets" - the flattened
@@ -23,7 +23,7 @@ library(stringr)
 
 # --- config -------------------------------------------------------------------
 
-UA      <- "Bruno Lammering (bachelors thesis) bruno@lammering.eu"  # SEC requires a contact UA
+UA      <- "reproduction of bachelors thesis"  # SEC requires a contact UA
 RAW_DIR <- "data/raw/sec_form345"
 EXT_DIR <- file.path(RAW_DIR, "extracted")
 OUT_DIR <- "data/sec_insider/insiders"
