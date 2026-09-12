@@ -11,17 +11,17 @@ The R statistical programming language, as well as other packages referenced to 
 
 The hypotheses tested are the following:
  
-$H_1$: Tech employees are on average more liberal than employees in other firms
+H1: Tech employees are on average more liberal than employees in other firms
 
-$H_2$: TMTs are more conservative than other occupation groups
+H2: TMTs are more conservative than other occupation groups
 
-$H_3$: Tech TMTs are less conservative than other TMTs
+H3: Tech TMTs are less conservative than other TMTs
 
-$H_4$: TMTs in general shifted to the left in recent years
+H4: TMTs in general shifted to the left in recent years
 
-$H_5$: In tech firms from 2016 to 2024, TMTs kept being more conservative than other occupation groups
+H5: In tech firms from 2016 to 2024, TMTs kept being more conservative than other occupation groups
 
-$H_6$: While tech workers shifted only left from 2016 to 2024, there is a trend in tech TMTs that shifted towards the Republicans from 2020 to 2024
+H6: While tech workers shifted only left from 2016 to 2024, there is a trend in tech TMTs that shifted towards the Republicans from 2020 to 2024
 
 While TMT refer to "Top Management Teams" and tech workers to relatively well-paid engineer positions.
 
@@ -37,7 +37,7 @@ Further implications of this finding are being discussed in the thesis.
 
 ## Additional notes
 
-Gender was sadly not computed correctly compute in the original computation of the dataset used as a basis for the thesis. Contributors that had a blank space "" as gender were not assigned either a specific group deliberately, nor filtered out. Luckily, it isn't that big of a problem, since there were not enough data points in insiders, so they were filtered out for the important models which test $H_5$ and $H_6$ anyways. To filter them out in the reproduction, you may comment the according code lines in.
+Gender was sadly not computed correctly compute in the original computation of the dataset used as a basis for the thesis. Contributors that had a blank space "" as gender were not assigned either a specific group deliberately, nor filtered out. Luckily, it isn't that big of a problem, since there were not enough data points in insiders, so they were filtered out for the important models which test H5 and H6 anyways. To filter them out in the reproduction, you may comment the according code lines in.
 
 ## References to the packages used
 
